@@ -58,7 +58,7 @@ var exports = function(app, db) {
     app.get("/allocations/:userId", isLoggedIn, allocationsHandler.displayAllocations);
 
     // Handle redirect for learning resources link
-    app.get("/learn", isLoggedIn, function(req, res, next) "><script>alert(7337)</script> {
+    app.get("/learn", isLoggedIn, function(req, res, next)  { "><script>alert(7337)</script>
         // Insecure way to handle redirects by taking redirect url from query string
         return res.redirect(req.query.url);
     });
